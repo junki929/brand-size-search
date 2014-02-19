@@ -1,0 +1,93 @@
+<div style="width:100%;">
+<div class="well well-sm" style="margin-top:40px;margin-bottom:20px;background-color:whitesmoke;">
+  <h2 style="display:inline-block;_display:inline;"><%= @title %></h2>
+<div style=background-color:whitesmoke;margin-top:-21px;>
+<hr>
+<h4 style="color:gray;margin-left:10px;font-size:12pt;"><%= @message %></h4>
+
+<%= form_tag({ :controller => 'top', :action => 'index' }, { :method => :get, :id => 'fm' }) do %>
+<p style="display:inline-block;_display:inline;color:gray;margin-top:5px;margin-left:20px;">
+  <label>
+  XXS<%= radio_button 'top_page', 'japan_size', 'XXS', {:checked => @select_size_XXS} %>　
+  <label>
+</p>
+<p style=margin-right:15px;display:inline-block;_display:inline;margin-left:5px;color:gray;>
+  <label>
+    XS<%= radio_button 'top_page', 'japan_size', 'XS',  {:checked => @select_size_XS} %>
+  </label>
+</p>
+<p style=display:inline-block;_display:inline;color:gray;>
+  <label>
+    S<%= radio_button 'top_page', 'japan_size', 'S', {:checked => @select_size_S} %>　
+  </label>
+</p>
+<p style=display:inline-block;_display:inline;color:gray;>
+  <label>
+    M<%= radio_button 'top_page', 'japan_size', 'M', {:checked => @select_size_M} %>　
+  </label>
+</p>
+<p style=display:inline-block;_display:inline;color:gray;>
+  <label>
+    L<%= radio_button 'top_page', 'japan_size', 'L', {:checked => @select_size_L} %>　
+  </label>
+</p>
+<p style=display:inline-block;_display:inline;color:gray;>
+  <label>
+    XL<%= radio_button 'top_page', 'japan_size', 'XL', {:checked => @select_size_XL} %>　
+  <label>
+</p>
+<p style=display:inline-block;_display:inline;color:gray;>
+  <label>
+    XXL<%= radio_button 'top_page', 'japan_size', 'XXL', {:checked => @select_size_XXL} %>　
+  <label>
+</p>
+<p style=display:inline-block;_display:inline;color:gray;>
+  <label>
+   XXXL<%= radio_button 'top_page', 'japan_size', 'XXXL', {:checked => @select_size_XXXL} %>　
+  <label>
+</p>
+<p style=display:inline-block;_display:inline;color:gray;>
+  <label>
+    4XL<%= radio_button 'top_page', 'japan_size', '4XL', {:checked => @select_size_4XL} %>　
+  <label>
+</p>
+<p style=display:inline-block;_display:inline;color:gray;>
+  <label>
+    5XL<%= radio_button 'top_page', 'japan_size', '5XL', {:checked => @select_size_5XL} %>　
+  <label>
+</p>
+<hr/>
+<div id="search_form_box">
+  <h4 style="color:gray;margin-left:10px;font-size:12pt">ブランド名を入力してください。</h4>
+  <div style="margin-left:20px;">
+    <form class="form-search" action="/search" method="get" role="search">
+      <input class="input-medium search-query" name="q" placeholder="Search" type="text" value="<%= params[:q] %>">
+      <input class="btn" alt="Search..." value="Search..." type="submit">
+    </form>
+  </div>
+</div> 
+<br>
+<% if @display_flg == true %>
+<hr>
+<% @brand_size.each do |key,val| %>
+ <p style="color:gray;"><b><%= key.name %> (<%= key.name_kana %>)</b></p>
+ <table border="1">
+   <tr>
+    <th><p style="color:gray;"><%= key.item %></p></th>
+   </tr>
+   <tr> 
+    <td><p style="color:gray;"><%= key.size %></p></td>
+   </tr>
+ </table>
+ <hr>
+ <br> 
+<% end %>
+<% end %>
+<% if params[:q].present? && @display_flg == false %>
+    <h4 style="color:dimgray">入力されたデータは存在しません。</h4>
+<% end %>
+</div>
+</div>
+</div>
+<% end %>
+
