@@ -6,4 +6,5 @@ BrandSizeSearch::Application.routes.draw do
   get "/top/index"
   get "/top/information"
   get "/top/size"
+  get "/search/:sizes" => "top#search", :as => :top
 end
