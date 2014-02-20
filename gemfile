@@ -32,9 +32,6 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# actionpack
-#gem 'actionpack', '~> 3.0.0.rc2'
-
 # bootstrap対応
 gem 'bootstrap-sass', '~> 3.1.1'
 #gem 'twitter-bootstrap-rails'
@@ -43,17 +40,13 @@ gem 'bootstrap-sass', '~> 3.1.1'
 gem 'therubyracer'
 
 # 管理画面
-#gem 'jquery-rails', '2.3.0'
-#gem 'formtastic', github: 'justinfrench/formtastic'
-#gem 'devise', '3.0.0.rc'
-#gem 'ransack', github: 'avit/ransack', branch: 'rails4-dependencies'
 gem 'activeadmin', github: 'gregbell/active_admin'
-
-# 認証機能
-gem 'devise'
 
 # 日本語化
 gem 'i18n_generators'
+
+# json
+gem 'json'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
