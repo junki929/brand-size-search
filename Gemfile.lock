@@ -202,6 +202,7 @@ DEPENDENCIES
   i18n_generators
   jbuilder (~> 1.2)
   jquery-rails
+  json
   pg
   rails
   sass-rails (~> 4.0.0)
