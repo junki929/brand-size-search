@@ -42,11 +42,18 @@ gem 'therubyracer'
 # 管理画面
 gem 'activeadmin', github: 'gregbell/active_admin'
 
+# 管理画面からattributeへアクセス
+gem 'protected_attributes'
+
 # 日本語化
 gem 'i18n_generators'
 
 # json
 gem 'json'
+
+# rspec
+gem 'rspec-rails'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
