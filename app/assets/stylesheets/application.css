@@ -22,13 +22,7 @@ text-decoration: none;
 .nav_bar {
   margin: 0 0 20px 0;
 }
-.nav_home {
-  float: left;
-  margin: 0 10px 0 0;
-  color: pink;
-  font-weight:bold;
-}
-.nav_information {
+.nav {
   float: left;
   margin: 0 10px 0 0;
   font-weight:bold;
