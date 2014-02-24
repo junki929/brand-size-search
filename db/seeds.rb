@@ -841,5 +841,133 @@ BrandSize.create([
     item: 'シャツ',
     size: '5',
     size_japan: 'XXL'
+  },
+  {
+    name: 'H&M',
+    name_kana: 'エイチアンドエム',
+    country: 'スウェーデン',
+    item: 'トップス',
+    size: 'XS',
+    size_japan: 'S'
+  },
+  {
+    name: 'H&M',
+    name_kana: 'エイチアンドエム',
+    country: 'スウェーデン',
+    item: 'トップス',
+    size: 'S',
+    size_japan: 'M'
+  },
+  {
+    name: 'H&M',
+    name_kana: 'エイチアンドエム',
+    country: 'スウェーデン',
+    item: 'トップス',
+    size: 'M',
+    size_japan: 'L'
+  },
+  {
+    name: 'H&M',
+    name_kana: 'エイチアンドエム',
+    country: 'スウェーデン',
+    item: 'トップス',
+    size: 'L',
+    size_japan: 'XXL'
+  },
+  {
+    name: 'H&M',
+    name_kana: 'エイチアンドエム',
+    country: 'スウェーデン',
+    item: 'トップス',
+    size: 'XL',
+    size_japan: 'XXL'
+  },
+  {
+    name: 'H&M',
+    name_kana: 'エイチアンドエム',
+    country: 'スウェーデン',
+    item: 'トップス',
+    size: 'XXL',
+    size_japan: 'XXXL'
+  },
+  {
+    name: 'Old Navy',
+    name_kana: 'オールドネイビー',
+    country: 'アメリカ',
+    item: 'トップス',
+    size: 'XXS',
+    size_japan: 'XS'
+  },
+  {
+    name: 'Old Navy',
+    name_kana: 'オールドネイビー',
+    country: 'アメリカ',
+    item: 'トップス',
+    size: 'XS',
+    size_japan: 'S'
+  },
+  {
+    name: 'Old Navy',
+    name_kana: 'オールドネイビー',
+    country: 'アメリカ',
+    item: 'トップス',
+    size: 'S',
+    size_japan: 'M'
+  },
+  {
+    name: 'Old Navy',
+    name_kana: 'オールドネイビー',
+    country: 'アメリカ',
+    item: 'トップス',
+    size: 'M',
+    size_japan: 'L'
+  },
+  {
+    name: 'Old Navy',
+    name_kana: 'オールドネイビー',
+    country: 'アメリカ',
+    item: 'トップス',
+    size: 'L',
+    size_japan: 'XL'
+  },
+  {
+    name: 'GAP',
+    name_kana: 'ギャップ',
+    country: 'アメリカ',
+    item: 'トップス',
+    size: 'XS',
+    size_japan: 'S'
+  },
+  {
+    name: 'GAP',
+    name_kana: 'ギャップ',
+    country: 'アメリカ',
+    item: 'トップス',
+    size: 'S',
+    size_japan: 'M'
+  },
+  {
+    name: 'GAP',
+    name_kana: 'ギャップ',
+    country: 'アメリカ',
+    item: 'トップス',
+    size: 'M',
+    size_japan: 'L'
+  },
+  {
+    name: 'GAP',
+    name_kana: 'ギャップ',
+    country: 'アメリカ',
+    item: 'トップス',
+    size: 'L',
+    size_japan: 'XL'
+  },
+  {
+    name: 'GAP',
+    name_kana: 'ギャップ',
+    country: 'アメリカ',
+    item: 'トップス',
+    size: 'XL',
+    size_japan: 'XXL'
   }
 ])
