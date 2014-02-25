@@ -14,7 +14,7 @@ BrandSize.create([
     name: 'BALENCIAGA',
     name_kana: 'バレンシアガ',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '44',
     size_japan: 'S'
   },
@@ -22,7 +22,7 @@ BrandSize.create([
     name: 'BALENCIAGA',
     name_kana: 'バレンシアガ',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '46',
     size_japan: 'M'
   },
@@ -30,7 +30,7 @@ BrandSize.create([
     name: 'BALENCIAGA',
     name_kana: 'バレンシアガ',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '48',
     size_japan: 'L'
   },
@@ -38,7 +38,7 @@ BrandSize.create([
     name: 'BALENCIAGA',
     name_kana: 'バレンシアガ',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '50',
     size_japan: 'XL'
   },
@@ -46,7 +46,7 @@ BrandSize.create([
     name: 'BOTTEGA VENETA',
     name_kana: 'ボッテガヴェネタ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '42',
     size_japan: 'XXS'
   },
@@ -54,7 +54,7 @@ BrandSize.create([
     name: 'BOTTEGA VENETA',
     name_kana: 'ボッテガヴェネタ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '44',
     size_japan: 'XS'
   },
@@ -62,7 +62,7 @@ BrandSize.create([
     name: 'BOTTEGA VENETA',
     name_kana: 'ボッテガヴェネタ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '46',
     size_japan: 'S'
   },
@@ -70,7 +70,7 @@ BrandSize.create([
     name: 'BOTTEGA VENETA',
     name_kana: 'ボッテガヴェネタ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '48',
     size_japan: 'M'
   },
@@ -78,7 +78,7 @@ BrandSize.create([
     name: 'BOTTEGA VENETA',
     name_kana: 'ボッテガヴェネタ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '50',
     size_japan: 'L'
   },
@@ -86,7 +86,7 @@ BrandSize.create([
     name: 'BOTTEGA VENETA',
     name_kana: 'ボッテガヴェネタ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '52',
     size_japan: 'XL'
   },
@@ -94,7 +94,7 @@ BrandSize.create([
     name: 'BOTTEGA VENETA',
     name_kana: 'ボッテガヴェネタ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '54',
     size_japan: 'XXL'
   },
@@ -102,7 +102,7 @@ BrandSize.create([
     name: 'BOTTEGA VENETA',
     name_kana: 'ボッテガヴェネタ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '56',
     size_japan: 'XXXL'
   },
@@ -110,7 +110,7 @@ BrandSize.create([
     name: 'BOTTEGA VENETA',
     name_kana: 'ボッテガヴェネタ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '58',
     size_japan: '4XL'
   },
@@ -118,7 +118,7 @@ BrandSize.create([
     name: 'BOTTEGA VENETA',
     name_kana: 'ボッテガヴェネタ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '60',
     size_japan: '5XL'
   },
@@ -126,7 +126,7 @@ BrandSize.create([
     name: 'BOTTEGA VENETA',
     name_kana: 'ボッテガヴェネタ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '62',
     size_japan: '62'
   },
@@ -134,7 +134,7 @@ BrandSize.create([
     name: 'BRUNELLO CUCINELLI',
     name_kana: 'ブルネロクチネリ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '42',
     size_japan: 'XXS'
   },
@@ -142,7 +142,7 @@ BrandSize.create([
     name: 'BRUNELLO CUCINELLI',
     name_kana: 'ブルネロクチネリ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '44',
     size_japan: 'XS'
   },
@@ -150,7 +150,7 @@ BrandSize.create([
     name: 'BRUNELLO CUCINELLI',
     name_kana: 'ブルネロクチネリ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '46',
     size_japan: 'S'
   },
@@ -158,7 +158,7 @@ BrandSize.create([
     name: 'BRUNELLO CUCINELLI',
     name_kana: 'ブルネロクチネリ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '48',
     size_japan: 'M'
   },
@@ -166,7 +166,7 @@ BrandSize.create([
     name: 'BRUNELLO CUCINELLI',
     name_kana: 'ブルネロクチネリ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '50',
     size_japan: 'L'
   },
@@ -174,7 +174,7 @@ BrandSize.create([
     name: 'BRUNELLO CUCINELLI',
     name_kana: 'ブルネロクチネリ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '52',
     size_japan: 'XL'
   },
@@ -182,7 +182,7 @@ BrandSize.create([
     name: 'BRUNELLO CUCINELLI',
     name_kana: 'ブルネロクチネリ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '54',
     size_japan: 'XXL'
   },
@@ -190,7 +190,7 @@ BrandSize.create([
     name: 'BRUNELLO CUCINELLI',
     name_kana: 'ブルネロクチネリ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '56',
     size_japan: 'XXXL'
   },
@@ -198,7 +198,7 @@ BrandSize.create([
     name: 'BRUNELLO CUCINELLI',
     name_kana: 'ブルネロクチネリ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '58',
     size_japan: '4XL'
   },
@@ -206,7 +206,7 @@ BrandSize.create([
     name: 'BRUNELLO CUCINELLI',
     name_kana: 'ブルネロクチネリ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '60',
     size_japan: '5XL'
   },
@@ -214,7 +214,7 @@ BrandSize.create([
     name: 'BRUNELLO CUCINELLI',
     name_kana: 'ブルネロクチネリ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '62',
     size_japan: '62'
   },
@@ -222,7 +222,7 @@ BrandSize.create([
     name: 'BURBERRY PRORSUM',
     name_kana: 'バーバリープローサム',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '44',
     size_japan: 'S'
   },
@@ -230,7 +230,7 @@ BrandSize.create([
     name: 'BURBERRY PRORSUM',
     name_kana: 'バーバリープローサム',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '46',
     size_japan: 'M'
   },
@@ -238,7 +238,7 @@ BrandSize.create([
     name: 'BURBERRY PRORSUM',
     name_kana: 'バーバリープローサム',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '48',
     size_japan: 'L'
   },
@@ -246,7 +246,7 @@ BrandSize.create([
     name: 'BURBERRY PRORSUM',
     name_kana: 'バーバリープローサム',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '50',
     size_japan: 'XL'
   },
@@ -254,7 +254,7 @@ BrandSize.create([
     name: 'BURBERRY PRORSUM',
     name_kana: 'バーバリープローサム',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '52',
     size_japan: 'XXL'
   },
@@ -262,7 +262,7 @@ BrandSize.create([
     name: 'BURBERRY PRORSUM',
     name_kana: 'バーバリープローサム',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '54',
     size_japan: 'XXL'
   },
@@ -270,7 +270,7 @@ BrandSize.create([
     name: 'BURBERRY PRORSUM',
     name_kana: 'バーバリープローサム',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '56',
     size_japan: '4XL'
   },
@@ -278,7 +278,7 @@ BrandSize.create([
     name: 'BURBERRY PRORSUM',
     name_kana: 'バーバリープローサム',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '58',
     size_japan: '5XL'
   },
@@ -286,7 +286,7 @@ BrandSize.create([
     name: 'BURBERRY PRORSUM',
     name_kana: 'バーバリープローサム',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '60',
     size_japan: '60'
   },
@@ -294,7 +294,7 @@ BrandSize.create([
     name: 'D SQUARED2',
     name_kana: 'ディースクエアード',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '42',
     size_japan: 'XXS'
   },
@@ -302,7 +302,7 @@ BrandSize.create([
     name: 'D SQUARED2',
     name_kana: 'ディースクエアード',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '44',
     size_japan: 'XS'
   },
@@ -310,7 +310,7 @@ BrandSize.create([
     name: 'D SQUARED2',
     name_kana: 'ディースクエアード',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '46',
     size_japan: 'S'
   },
@@ -318,7 +318,7 @@ BrandSize.create([
     name: 'D SQUARED2',
     name_kana: 'ディースクエアード',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '48',
     size_japan: 'M'
   },
@@ -326,7 +326,7 @@ BrandSize.create([
     name: 'D SQUARED2',
     name_kana: 'ディースクエアード',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '50',
     size_japan: 'L'
   },
@@ -334,7 +334,7 @@ BrandSize.create([
     name: 'D SQUARED2',
     name_kana: 'ディースクエアード',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '52',
     size_japan: 'XL'
   },
@@ -342,7 +342,7 @@ BrandSize.create([
     name: 'D SQUARED2',
     name_kana: 'ディースクエアード',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '54',
     size_japan: 'XXL'
   },
@@ -350,7 +350,7 @@ BrandSize.create([
     name: 'D SQUARED2',
     name_kana: 'ディースクエアード',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '56',
     size_japan: 'XXXL'
   },
@@ -358,7 +358,7 @@ BrandSize.create([
     name: 'D SQUARED2',
     name_kana: 'ディースクエアード',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '58',
     size_japan: '4XL'
   },
@@ -366,7 +366,7 @@ BrandSize.create([
     name: 'D SQUARED2',
     name_kana: 'ディースクエアード',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '60',
     size_japan: '5XL'
   },
@@ -374,7 +374,7 @@ BrandSize.create([
     name: 'D SQUARED2',
     name_kana: 'ディースクエアード',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '62',
     size_japan: '62'
   },
@@ -382,7 +382,7 @@ BrandSize.create([
     name: 'DIOR HOMME',
     name_kana: 'ディオールオム',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '42',
     size_japan: 'XXS'
   },
@@ -390,7 +390,7 @@ BrandSize.create([
     name: 'DIOR HOMME',
     name_kana: 'ディオールオム',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '42',
     size_japan: 'XS'
   },
@@ -398,7 +398,7 @@ BrandSize.create([
     name: 'DIOR HOMME',
     name_kana: 'ディオールオム',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '44',
     size_japan: 'XS'
   },
@@ -406,7 +406,7 @@ BrandSize.create([
     name: 'DIOR HOMME',
     name_kana: 'ディオールオム',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '44',
     size_japan: 'S'
   },
@@ -414,7 +414,7 @@ BrandSize.create([
     name: 'DIOR HOMME',
     name_kana: 'ディオールオム',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '46',
     size_japan: 'M'
   },
@@ -422,7 +422,7 @@ BrandSize.create([
     name: 'DIOR HOMME',
     name_kana: 'ディオールオム',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '48',
     size_japan: 'L'
   },
@@ -430,7 +430,7 @@ BrandSize.create([
     name: 'DIOR HOMME',
     name_kana: 'ディオールオム',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '50',
     size_japan: 'XL'
   },
@@ -438,7 +438,7 @@ BrandSize.create([
     name: 'DIOR HOMME',
     name_kana: 'ディオールオム',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '52',
     size_japan: 'XXL'
   },
@@ -446,7 +446,7 @@ BrandSize.create([
     name: 'DIOR HOMME',
     name_kana: 'ディオールオム',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '54',
     size_japan: 'XXXL'
   },
@@ -454,7 +454,7 @@ BrandSize.create([
     name: 'DIOR HOMME',
     name_kana: 'ディオールオム',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '56',
     size_japan: '4XL'
   },
@@ -462,7 +462,7 @@ BrandSize.create([
     name: 'DIOR HOMME',
     name_kana: 'ディオールオム',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '58',
     size_japan: '5XL'
   },
@@ -470,7 +470,7 @@ BrandSize.create([
     name: 'Dolce & Gabbana',
     name_kana: 'ドルチェ&ガッバーナ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '44',
     size_japan: 'XS'
   },
@@ -478,7 +478,7 @@ BrandSize.create([
     name: 'Dolce & Gabbana',
     name_kana: 'ドルチェ&ガッバーナ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '46',
     size_japan: 'S'
   },
@@ -486,7 +486,7 @@ BrandSize.create([
     name: 'Dolce & Gabbana',
     name_kana: 'ドルチェ&ガッバーナ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '48',
     size_japan: 'M'
   },
@@ -494,7 +494,7 @@ BrandSize.create([
     name: 'Dolce & Gabbana',
     name_kana: 'ドルチェ&ガッバーナ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '50',
     size_japan: 'L'
   },
@@ -502,7 +502,7 @@ BrandSize.create([
     name: 'Dolce & Gabbana',
     name_kana: 'ドルチェ&ガッバーナ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '52',
     size_japan: 'XL'
   },
@@ -510,7 +510,7 @@ BrandSize.create([
     name: 'Dolce & Gabbana',
     name_kana: 'ドルチェ&ガッバーナ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '54',
     size_japan: 'XXL'
   },
@@ -518,7 +518,7 @@ BrandSize.create([
     name: 'GUCCI',
     name_kana: 'グッチ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '44',
     size_japan: 'S'
   },
@@ -526,7 +526,7 @@ BrandSize.create([
     name: 'GUCCI',
     name_kana: 'グッチ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '46',
     size_japan: 'M'
   },
@@ -534,7 +534,7 @@ BrandSize.create([
     name: 'GUCCI',
     name_kana: 'グッチ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '48',
     size_japan: 'L'
   },
@@ -542,7 +542,7 @@ BrandSize.create([
     name: 'GUCCI',
     name_kana: 'グッチ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '50',
     size_japan: 'XL'
   },
@@ -550,7 +550,7 @@ BrandSize.create([
     name: 'GUCCI',
     name_kana: 'グッチ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '52',
     size_japan: 'XXL'
   },
@@ -558,7 +558,7 @@ BrandSize.create([
     name: 'GUCCI',
     name_kana: 'グッチ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '54',
     size_japan: 'XXXL'
   },
@@ -566,7 +566,7 @@ BrandSize.create([
     name: 'GUCCI',
     name_kana: 'グッチ',
     country: 'イタリア',
-    item: 'アウター',
+    item: 'Tops',
     size: '56',
     size_japan: '4XL'
   },
@@ -574,7 +574,7 @@ BrandSize.create([
     name: 'LANVIN',
     name_kana: 'ランバン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '44',
     size_japan: 'XS'
   },
@@ -582,7 +582,7 @@ BrandSize.create([
     name: 'LANVIN',
     name_kana: 'ランバン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '46',
     size_japan: 'S'
   },
@@ -590,7 +590,7 @@ BrandSize.create([
     name: 'LANVIN',
     name_kana: 'ランバン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '48',
     size_japan: 'M'
   },
@@ -598,7 +598,7 @@ BrandSize.create([
     name: 'LANVIN',
     name_kana: 'ランバン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '50',
     size_japan: 'L'
   },
@@ -606,7 +606,7 @@ BrandSize.create([
     name: 'LANVIN',
     name_kana: 'ランバン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '52',
     size_japan: 'L'
   },
@@ -614,7 +614,7 @@ BrandSize.create([
     name: 'LANVIN',
     name_kana: 'ランバン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '52',
     size_japan: 'XL'
   },
@@ -622,7 +622,7 @@ BrandSize.create([
     name: 'LANVIN',
     name_kana: 'ランバン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '54',
     size_japan: 'XL'
   },
@@ -630,7 +630,7 @@ BrandSize.create([
     name: 'LANVIN',
     name_kana: 'ランバン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '56',
     size_japan: 'XXL'
   },
@@ -638,7 +638,7 @@ BrandSize.create([
     name: 'LANVIN',
     name_kana: 'ランバン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '58',
     size_japan: 'XXL'
   },
@@ -646,7 +646,7 @@ BrandSize.create([
     name: 'LANVIN',
     name_kana: 'ランバン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '58',
     size_japan: 'XXXL'
   },
@@ -654,7 +654,7 @@ BrandSize.create([
     name: 'MONCLER',
     name_kana: 'モンクレール',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '00',
     size_japan: 'XS'
   },
@@ -662,7 +662,7 @@ BrandSize.create([
     name: 'MONCLER',
     name_kana: 'モンクレール',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '0',
     size_japan: 'S'
   },
@@ -670,7 +670,7 @@ BrandSize.create([
     name: 'MONCLER',
     name_kana: 'モンクレール',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '1',
     size_japan: 'S'
   },
@@ -678,7 +678,7 @@ BrandSize.create([
     name: 'MONCLER',
     name_kana: 'モンクレール',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '1',
     size_japan: 'M'
   },
@@ -686,7 +686,7 @@ BrandSize.create([
     name: 'MONCLER',
     name_kana: 'モンクレール',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '2',
     size_japan: 'M'
   },
@@ -694,7 +694,7 @@ BrandSize.create([
     name: 'MONCLER',
     name_kana: 'モンクレール',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '3',
     size_japan: 'L'
   },
@@ -702,7 +702,7 @@ BrandSize.create([
     name: 'MONCLER',
     name_kana: 'モンクレール',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '4',
     size_japan: 'XL'
   },
@@ -710,7 +710,7 @@ BrandSize.create([
     name: 'Saint Laurent',
     name_kana: 'サンローラン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '38',
     size_japan: 'XXS'
   },
@@ -718,7 +718,7 @@ BrandSize.create([
     name: 'Saint Laurent',
     name_kana: 'サンローラン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '40',
     size_japan: 'XS'
   },
@@ -726,7 +726,7 @@ BrandSize.create([
     name: 'Saint Laurent',
     name_kana: 'サンローラン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '42',
     size_japan: 'S'
   },
@@ -734,7 +734,7 @@ BrandSize.create([
     name: 'Saint Laurent',
     name_kana: 'サンローラン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '44',
     size_japan: 'M'
   },
@@ -742,7 +742,7 @@ BrandSize.create([
     name: 'Saint Laurent',
     name_kana: 'サンローラン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '46',
     size_japan: 'L'
   },
@@ -750,7 +750,7 @@ BrandSize.create([
     name: 'Saint Laurent',
     name_kana: 'サンローラン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '48',
     size_japan: 'XL'
   },
@@ -758,7 +758,7 @@ BrandSize.create([
     name: 'Saint Laurent',
     name_kana: 'サンローラン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '50',
     size_japan: 'XXL'
   },
@@ -766,7 +766,7 @@ BrandSize.create([
     name: 'Saint Laurent',
     name_kana: 'サンローラン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '52',
     size_japan: 'XXXL'
   },
@@ -774,7 +774,7 @@ BrandSize.create([
     name: 'Saint Laurent',
     name_kana: 'サンローラン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '54',
     size_japan: '4XL'
   },
@@ -782,7 +782,7 @@ BrandSize.create([
     name: 'Saint Laurent',
     name_kana: 'サンローラン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '56',
     size_japan: '5XL'
   },
@@ -790,7 +790,7 @@ BrandSize.create([
     name: 'Saint Laurent',
     name_kana: 'サンローラン',
     country: 'フランス',
-    item: 'アウター',
+    item: 'Tops',
     size: '62',
     size_japan: '62'
   },
@@ -798,7 +798,7 @@ BrandSize.create([
     name: 'THOM BROWNE',
     name_kana: 'トムブラウン',
     country: 'アメリカ',
-    item: 'シャツ',
+    item: 'Shirts',
     size: '0',
     size_japan: 'XS'
   },
@@ -806,7 +806,7 @@ BrandSize.create([
     name: 'THOM BROWNE',
     name_kana: 'トムブラウン',
     country: 'アメリカ',
-    item: 'シャツ',
+    item: 'Shirts',
     size: '1',
     size_japan: 'S'
   },
@@ -814,7 +814,7 @@ BrandSize.create([
     name: 'THOM BROWNE',
     name_kana: 'トムブラウン',
     country: 'アメリカ',
-    item: 'シャツ',
+    item: 'Shirts',
     size: '2',
     size_japan: 'M'
   },
@@ -822,7 +822,7 @@ BrandSize.create([
     name: 'THOM BROWNE',
     name_kana: 'トムブラウン',
     country: 'アメリカ',
-    item: 'シャツ',
+    item: 'Shirts',
     size: '3',
     size_japan: 'L'
   },
@@ -830,7 +830,7 @@ BrandSize.create([
     name: 'THOM BROWNE',
     name_kana: 'トムブラウン',
     country: 'アメリカ',
-    item: 'シャツ',
+    item: 'Shirts',
     size: '4',
     size_japan: 'XL'
   },
@@ -838,7 +838,7 @@ BrandSize.create([
     name: 'THOM BROWNE',
     name_kana: 'トムブラウン',
     country: 'アメリカ',
-    item: 'シャツ',
+    item: 'Shirts',
     size: '5',
     size_japan: 'XXL'
   },
@@ -846,7 +846,7 @@ BrandSize.create([
     name: 'H&M',
     name_kana: 'エイチアンドエム',
     country: 'スウェーデン',
-    item: 'トップス',
+    item: 'Tops',
     size: 'XS',
     size_japan: 'S'
   },
@@ -854,7 +854,7 @@ BrandSize.create([
     name: 'H&M',
     name_kana: 'エイチアンドエム',
     country: 'スウェーデン',
-    item: 'トップス',
+    item: 'Tops',
     size: 'S',
     size_japan: 'M'
   },
@@ -862,7 +862,7 @@ BrandSize.create([
     name: 'H&M',
     name_kana: 'エイチアンドエム',
     country: 'スウェーデン',
-    item: 'トップス',
+    item: 'Tops',
     size: 'M',
     size_japan: 'L'
   },
@@ -870,7 +870,7 @@ BrandSize.create([
     name: 'H&M',
     name_kana: 'エイチアンドエム',
     country: 'スウェーデン',
-    item: 'トップス',
+    item: 'Tops',
     size: 'L',
     size_japan: 'XXL'
   },
@@ -878,7 +878,7 @@ BrandSize.create([
     name: 'H&M',
     name_kana: 'エイチアンドエム',
     country: 'スウェーデン',
-    item: 'トップス',
+    item: 'Tops',
     size: 'XL',
     size_japan: 'XXL'
   },
@@ -886,7 +886,7 @@ BrandSize.create([
     name: 'H&M',
     name_kana: 'エイチアンドエム',
     country: 'スウェーデン',
-    item: 'トップス',
+    item: 'Tops',
     size: 'XXL',
     size_japan: 'XXXL'
   },
@@ -894,7 +894,7 @@ BrandSize.create([
     name: 'Old Navy',
     name_kana: 'オールドネイビー',
     country: 'アメリカ',
-    item: 'トップス',
+    item: 'Tops',
     size: 'XXS',
     size_japan: 'XS'
   },
@@ -902,7 +902,7 @@ BrandSize.create([
     name: 'Old Navy',
     name_kana: 'オールドネイビー',
     country: 'アメリカ',
-    item: 'トップス',
+    item: 'Tops',
     size: 'XS',
     size_japan: 'S'
   },
@@ -910,7 +910,7 @@ BrandSize.create([
     name: 'Old Navy',
     name_kana: 'オールドネイビー',
     country: 'アメリカ',
-    item: 'トップス',
+    item: 'Tops',
     size: 'S',
     size_japan: 'M'
   },
@@ -918,7 +918,7 @@ BrandSize.create([
     name: 'Old Navy',
     name_kana: 'オールドネイビー',
     country: 'アメリカ',
-    item: 'トップス',
+    item: 'Tops',
     size: 'M',
     size_japan: 'L'
   },
@@ -926,7 +926,7 @@ BrandSize.create([
     name: 'Old Navy',
     name_kana: 'オールドネイビー',
     country: 'アメリカ',
-    item: 'トップス',
+    item: 'Tops',
     size: 'L',
     size_japan: 'XL'
   },
@@ -934,7 +934,7 @@ BrandSize.create([
     name: 'GAP',
     name_kana: 'ギャップ',
     country: 'アメリカ',
-    item: 'トップス',
+    item: 'Tops',
     size: 'XS',
     size_japan: 'S'
   },
@@ -942,7 +942,7 @@ BrandSize.create([
     name: 'GAP',
     name_kana: 'ギャップ',
     country: 'アメリカ',
-    item: 'トップス',
+    item: 'Tops',
     size: 'S',
     size_japan: 'M'
   },
@@ -950,7 +950,7 @@ BrandSize.create([
     name: 'GAP',
     name_kana: 'ギャップ',
     country: 'アメリカ',
-    item: 'トップス',
+    item: 'Tops',
     size: 'M',
     size_japan: 'L'
   },
@@ -958,7 +958,7 @@ BrandSize.create([
     name: 'GAP',
     name_kana: 'ギャップ',
     country: 'アメリカ',
-    item: 'トップス',
+    item: 'Tops',
     size: 'L',
     size_japan: 'XL'
   },
@@ -966,7 +966,7 @@ BrandSize.create([
     name: 'GAP',
     name_kana: 'ギャップ',
     country: 'アメリカ',
-    item: 'トップス',
+    item: 'Tops',
     size: 'XL',
     size_japan: 'XXL'
   }
