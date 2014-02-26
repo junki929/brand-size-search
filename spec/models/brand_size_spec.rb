@@ -5,45 +5,45 @@ describe BrandSize do
   describe 'サイズ' do
     it 'サイズが選択されなかった場合' do
       select_size = ''
-      brand_data = BrandSize.select_size(select_size)
+      brand_data = BrandSize.select_sizes(select_size)
       expect = BrandSize.where("")
       id_list = brand_data.map { |data| data.id }.sort
       expect_id_list = expect.map { |data| data.id }.sort
       expect_id_list.should == id_list
-      brand_sql = BrandSize.select_size(select_size).to_sql
+      brand_sql = BrandSize.select_sizes(select_size).to_sql
       expect_sql = "SELECT \"brand_sizes\".* FROM \"brand_sizes\""
       brand_sql.should == expect_sql
     end
     it 'サイズが1つ選択された場合' do
       select_size = ['XXS']
-      brand_data = BrandSize.select_size(select_size)
+      brand_data = BrandSize.select_sizes(select_size)
       expect = BrandSize.where("\"brand_sizes\".\"size_japan\" = 'XXS'")
       id_list = brand_data.map { |data| data.id }.sort
       expect_id_list = expect.map { |data| data.id }.sort
       expect_id_list.should == id_list
-      brand_sql = BrandSize.select_size(select_size).to_sql
+      brand_sql = BrandSize.select_sizes(select_size).to_sql
       expect_sql = "SELECT \"brand_sizes\".* FROM \"brand_sizes\"  WHERE \"brand_sizes\".\"size_japan\" = 'XXS'"
       brand_sql.should == expect_sql
     end
     it 'サイズが2つ選択された場合' do
       select_size = ['XXS','XS']
-      brand_data = BrandSize.select_size(select_size)
+      brand_data = BrandSize.select_sizes(select_size)
       expect = BrandSize.where("(\"brand_sizes\".\"size_japan\" = 'XXS' OR \"brand_sizes\".\"size_japan\" = 'XS')")
       id_list = brand_data.map { |data| data.id }.sort
       expect_id_list = expect.map { |data| data.id }.sort
       expect_id_list.should == id_list
-      brand_sql = BrandSize.select_size(select_size).to_sql
+      brand_sql = BrandSize.select_sizes(select_size).to_sql
       expect_sql = "SELECT \"brand_sizes\".* FROM \"brand_sizes\"  WHERE ((\"brand_sizes\".\"size_japan\" = 'XXS' OR \"brand_sizes\".\"size_japan\" = 'XS'))"
       brand_sql.should == expect_sql
     end 
     it 'サイズが複数選択された場合' do
       select_size = ['XXS','XS','S','M','L','XL']
-      brand_data = BrandSize.select_size(select_size)
+      brand_data = BrandSize.select_sizes(select_size)
       expect = BrandSize.where("(((((\"brand_sizes\".\"size_japan\" = 'XXS' OR \"brand_sizes\".\"size_japan\" = 'XS') OR \"brand_sizes\".\"size_japan\" = 'S') OR \"brand_sizes\".\"size_japan\" = 'M') OR \"brand_sizes\".\"size_japan\" = 'L') OR \"brand_sizes\".\"size_japan\" = 'XL')")
       id_list = brand_data.map { |data| data.id }.sort
       expect_id_list = expect.map { |data| data.id }.sort
       expect_id_list.should == id_list
-      brand_sql = BrandSize.select_size(select_size).to_sql
+      brand_sql = BrandSize.select_sizes(select_size).to_sql
       expect_sql = "SELECT \"brand_sizes\".* FROM \"brand_sizes\"  WHERE ((((((\"brand_sizes\".\"size_japan\" = 'XXS' OR \"brand_sizes\".\"size_japan\" = 'XS') OR \"brand_sizes\".\"size_japan\" = 'S') OR \"brand_sizes\".\"size_japan\" = 'M') OR \"brand_sizes\".\"size_japan\" = 'L') OR \"brand_sizes\".\"size_japan\" = 'XL'))"
       brand_sql.should == expect_sql
     end
@@ -151,78 +151,120 @@ describe BrandSize do
     end
   end
 
-  describe 'サイズとブランド名' do
-    it 'サイズが1つ選択され、ブランド名が入力された場合' do
-      select_size = ['XXS']
-      input_brand = 'BOTTEGA VENETA'
-      brand_data = BrandSize.select_size_and_name(select_size,input_brand)
-      expect = BrandSize.where("\"brand_sizes\".\"size_japan\" = 'XXS' AND (\"brand_sizes\".\"name\" ILIKE '%BOTTEGA VENETA%' OR \"brand_sizes\".\"name_kana\" ILIKE '%BOTTEGA VENETA%')")
-      id_list = brand_data.map { |data| data.id }.sort
-      expect_id_list = expect.map { |data| data.id }.sort
-      expect_id_list.should == id_list
-      brand_sql = BrandSize.select_size_and_name(select_size,input_brand).to_sql
-      expect_sql = "SELECT \"brand_sizes\".* FROM \"brand_sizes\"  WHERE (\"brand_sizes\".\"size_japan\" = 'XXS' AND (\"brand_sizes\".\"name\" ILIKE '%BOTTEGA VENETA%' OR \"brand_sizes\".\"name_kana\" ILIKE '%BOTTEGA VENETA%'))"
-      brand_sql.should == expect_sql
-    end
-    it 'サイズが1つ選択され、ブランド名が入力されなかった場合' do
-      select_size = ['XXS']
-      input_brand = ''
-      brand_data = BrandSize.select_size_and_name(select_size,input_brand)
-      expect = BrandSize.where("\"brand_sizes\".\"size_japan\" = 'XXS'")
-      id_list = brand_data.map { |data| data.id }.sort
-      expect_id_list = expect.map { |data| data.id }.sort
-      expect_id_list.should == id_list
-      brand_sql = BrandSize.select_size_and_name(select_size,input_brand).to_sql
-      expect_sql = "SELECT \"brand_sizes\".* FROM \"brand_sizes\"  WHERE \"brand_sizes\".\"size_japan\" = 'XXS'"
-      brand_sql.should == expect_sql
-    end
-    it 'サイズが複数選択され、ブランド名が入力された場合' do
-      select_size = ['XXS','XS','S','M','L','XL']
-      input_brand = 'BOTTEGA VENETA'
-      brand_data = BrandSize.select_size_and_name(select_size,input_brand)
-      expect = BrandSize.where("(((((\"brand_sizes\".\"size_japan\" = 'XXS' OR \"brand_sizes\".\"size_japan\" = 'XS') OR \"brand_sizes\".\"size_japan\" = 'S') OR \"brand_sizes\".\"size_japan\" = 'M') OR \"brand_sizes\".\"size_japan\" = 'L') OR \"brand_sizes\".\"size_japan\" = 'XL') AND (\"brand_sizes\".\"name\" ILIKE '%BOTTEGA VENETA%' OR \"brand_sizes\".\"name_kana\" ILIKE '%BOTTEGA VENETA%')")
-      id_list = brand_data.map { |data| data.id }.sort
-      expect_id_list = expect.map { |data| data.id }.sort
-      expect_id_list.should == id_list
-      brand_sql = BrandSize.select_size_and_name(select_size,input_brand).to_sql
-      expect_sql = "SELECT \"brand_sizes\".* FROM \"brand_sizes\"  WHERE ((((((\"brand_sizes\".\"size_japan\" = 'XXS' OR \"brand_sizes\".\"size_japan\" = 'XS') OR \"brand_sizes\".\"size_japan\" = 'S') OR \"brand_sizes\".\"size_japan\" = 'M') OR \"brand_sizes\".\"size_japan\" = 'L') OR \"brand_sizes\".\"size_japan\" = 'XL') AND (\"brand_sizes\".\"name\" ILIKE '%BOTTEGA VENETA%' OR \"brand_sizes\".\"name_kana\" ILIKE '%BOTTEGA VENETA%'))"
-      brand_sql.should == expect_sql
-    end
-    it 'サイズが複数選択され、ブランド名が入力されなかった場合' do
-      select_size = ['XXS','XS','S','M','L','XL']
-      input_brand = ''
-      brand_data = BrandSize.select_size_and_name(select_size,input_brand)
-      expect = BrandSize.where("(((((\"brand_sizes\".\"size_japan\" = 'XXS' OR \"brand_sizes\".\"size_japan\" = 'XS') OR \"brand_sizes\".\"size_japan\" = 'S') OR \"brand_sizes\".\"size_japan\" = 'M') OR \"brand_sizes\".\"size_japan\" = 'L') OR \"brand_sizes\".\"size_japan\" = 'XL')")
-      id_list = brand_data.map { |data| data.id }.sort
-      expect_id_list = expect.map { |data| data.id }.sort
-      expect_id_list.should == id_list
-      brand_sql = BrandSize.select_size_and_name(select_size,input_brand).to_sql
-      expect_sql = "SELECT \"brand_sizes\".* FROM \"brand_sizes\"  WHERE ((((((\"brand_sizes\".\"size_japan\" = 'XXS' OR \"brand_sizes\".\"size_japan\" = 'XS') OR \"brand_sizes\".\"size_japan\" = 'S') OR \"brand_sizes\".\"size_japan\" = 'M') OR \"brand_sizes\".\"size_japan\" = 'L') OR \"brand_sizes\".\"size_japan\" = 'XL'))"
-      brand_sql.should == expect_sql
-    end
-    it 'サイズが選択されず、ブランド名が入力された場合' do
+  describe 'アイテムとサイズ' do
+    it 'アイテムとサイズが選択されなかった場合' do
+      select_item = ''
       select_size = ''
-      input_brand = 'BOTTEGA VENETA'
-      brand_data = BrandSize.select_size_and_name(select_size,input_brand)
-      expect = BrandSize.where("(\"brand_sizes\".\"name\" ILIKE '%BOTTEGA VENETA%' OR \"brand_sizes\".\"name_kana\" ILIKE '%BOTTEGA VENETA%')")
-      id_list = brand_data.map { |data| data.id }.sort
-      expect_id_list = expect.map { |data| data.id }.sort
-      expect_id_list.should == id_list
-      brand_sql = BrandSize.select_size_and_name(select_size,input_brand).to_sql
-      expect_sql = "SELECT \"brand_sizes\".* FROM \"brand_sizes\"  WHERE ((\"brand_sizes\".\"name\" ILIKE '%BOTTEGA VENETA%' OR \"brand_sizes\".\"name_kana\" ILIKE '%BOTTEGA VENETA%'))"
-      brand_sql.should == expect_sql
-    end
-    it 'サイズが選択されず、ブランド名が入力されなかった場合' do
-      select_size = ''
-      input_brand = ''
-      brand_data = BrandSize.select_size_and_name(select_size,input_brand)
+      brand_data = BrandSize.select_item_and_sizes(select_item,select_size)
       expect = BrandSize.where("")
       id_list = brand_data.map { |data| data.id }.sort
       expect_id_list = expect.map { |data| data.id }.sort
       expect_id_list.should == id_list
-      brand_sql = BrandSize.select_size_and_name(select_size,input_brand).to_sql
+      brand_sql = BrandSize.select_item_and_sizes(select_item,select_size).to_sql
       expect_sql = "SELECT \"brand_sizes\".* FROM \"brand_sizes\""
       brand_sql.should == expect_sql
+    end
+    it 'アイテムが選択されず、サイズが1つ選択された場合' do
+      select_item = ''
+      select_size = ['XXS']
+      brand_data = BrandSize.select_item_and_sizes(select_item,select_size)
+      expect = BrandSize.where("")
+      id_list = brand_data.map { |data| data.id }.sort
+      expect_id_list = expect.map { |data| data.id }.sort
+      expect_id_list.should == id_list
+      brand_sql = BrandSize.select_item_and_sizes(select_item,select_size).to_sql
+      expect_sql = "SELECT \"brand_sizes\".* FROM \"brand_sizes\""
+      brand_sql.should == expect_sql
+    end
+    it 'アイテムが選択されず、サイズが複数選択された場合' do
+      select_item = ''
+      select_size = ['XXS','XS']
+      brand_data = BrandSize.select_item_and_sizes(select_item,select_size)
+      expect = BrandSize.where("")
+      id_list = brand_data.map { |data| data.id }.sort
+      expect_id_list = expect.map { |data| data.id }.sort
+      expect_id_list.should == id_list
+      brand_sql = BrandSize.select_item_and_sizes(select_item,select_size).to_sql
+      expect_sql = "SELECT \"brand_sizes\".* FROM \"brand_sizes\""
+      brand_sql.should == expect_sql
+    end
+    it 'アイテムが選択され、サイズが選択されなかった場合' do
+      select_item = 'Tops'
+      select_size = ''
+      brand_data = BrandSize.select_item_and_sizes(select_item,select_size)
+      expect = BrandSize.where("\"brand_sizes\".\"item\" = 'Tops'")
+      id_list = brand_data.map { |data| data.id }.sort
+      expect_id_list = expect.map { |data| data.id }.sort
+      expect_id_list.should == id_list
+      brand_sql = BrandSize.select_item_and_sizes(select_item,select_size).to_sql
+      expect_sql = "SELECT \"brand_sizes\".* FROM \"brand_sizes\"  WHERE \"brand_sizes\".\"item\" = 'Tops'"
+      brand_sql.should == expect_sql
+    end
+    it 'アイテムが選択され、サイズが1つ選択された場合' do
+      select_item = 'Tops'
+      select_size = ['XXS']
+      brand_data = BrandSize.select_item_and_sizes(select_item,select_size)
+      expect = BrandSize.where("\"brand_sizes\".\"item\" = 'Tops' AND \"brand_sizes\".\"size_japan\" = 'XXS'")
+      id_list = brand_data.map { |data| data.id }.sort
+      expect_id_list = expect.map { |data| data.id }.sort
+      expect_id_list.should == id_list
+      brand_sql = BrandSize.select_item_and_sizes(select_item,select_size).to_sql
+      expect_sql = "SELECT \"brand_sizes\".* FROM \"brand_sizes\"  WHERE (\"brand_sizes\".\"item\" = 'Tops' AND \"brand_sizes\".\"size_japan\" = 'XXS')"
+      brand_sql.should == expect_sql
+    end
+    it 'アイテムが選択され、サイズが複数選択された場合' do
+      select_item = 'Tops'
+      select_size = ['XXS','XS']
+      brand_data = BrandSize.select_item_and_sizes(select_item,select_size)
+      expect = BrandSize.where("\"brand_sizes\".\"item\" = 'Tops' AND (\"brand_sizes\".\"size_japan\" = 'XXS' OR \"brand_sizes\".\"size_japan\" = 'XS')")
+      id_list = brand_data.map { |data| data.id }.sort
+      expect_id_list = expect.map { |data| data.id }.sort
+      expect_id_list.should == id_list
+      brand_sql = BrandSize.select_item_and_sizes(select_item,select_size).to_sql
+      expect_sql = "SELECT \"brand_sizes\".* FROM \"brand_sizes\"  WHERE (\"brand_sizes\".\"item\" = 'Tops' AND (\"brand_sizes\".\"size_japan\" = 'XXS' OR \"brand_sizes\".\"size_japan\" = 'XS'))"
+      brand_sql.should == expect_sql
+    end
+    it 'top_controllerでの呼び出し方で、アイテムとサイズが選択されなかった場合' do
+      select_tops = ''
+      data_tops = select_tops.blank? ? [] : BrandSize.select_item_and_sizes('Tops',select_tops)
+      select_shirts = ''
+      data_shirts = select_shirts.blank? ? [] : BrandSize.select_item_and_sizes('Shirts',select_shirts)
+      select_bottoms = ''
+      data_bottoms = select_bottoms.blank? ? [] : BrandSize.select_item_and_sizes('Bottoms',select_bottoms)
+      select_shoes = ''
+      data_shoes = select_shoes.blank? ? [] : BrandSize.select_item_and_sizes('Shoes',select_shoes)
+
+      brand_data = data_tops + data_shirts + data_bottoms + data_shoes
+      expect = []
+      expect.should == brand_data
+    end
+    it 'top_controllerでの呼び出し方で、アイテム1つかつサイズ1つで選択された場合' do
+      select_tops = ['XXS']
+      data_tops = select_tops.blank? ? [] : BrandSize.select_item_and_sizes('Tops',select_tops)
+      select_shirts = ''
+      data_shirts = select_shirts.blank? ? [] : BrandSize.select_item_and_sizes('Shirts',select_shirts)
+      select_bottoms = ''
+      data_bottoms = select_bottoms.blank? ? [] : BrandSize.select_item_and_sizes('Bottoms',select_bottoms)
+      select_shoes = ''
+      data_shoes = select_shoes.blank? ? [] : BrandSize.select_item_and_sizes('Shoes',select_shoes)
+
+      brand_data = data_tops + data_shirts + data_bottoms + data_shoes
+      expect = BrandSize.where("\"brand_sizes\".\"item\" = 'Tops' AND \"brand_sizes\".\"size_japan\" = 'XXS'")
+      expect.should == brand_data
+    end
+    it 'top_controllerでの呼び出し方で、アイテム複数かつサイズ1つで選択された場合' do
+      select_tops = ['XXS']
+      data_tops = select_tops.blank? ? [] : BrandSize.select_item_and_sizes('Tops',select_tops)
+      select_shirts = ['XXS']
+      data_shirts = select_shirts.blank? ? [] : BrandSize.select_item_and_sizes('Shirts',select_shirts)
+      select_bottoms = ''
+      data_bottoms = select_bottoms.blank? ? [] : BrandSize.select_item_and_sizes('Bottoms',select_bottoms)
+      select_shoes = ''
+      data_shoes = select_shoes.blank? ? [] : BrandSize.select_item_and_sizes('Shoes',select_shoes)
+
+      brand_data = data_tops + data_shirts + data_bottoms + data_shoes
+      expect = BrandSize.where("(\"brand_sizes\".\"item\" = 'Tops' AND \"brand_sizes\".\"size_japan\" = 'XXS') OR (\"brand_sizes\".\"item\" = 'Shirts' AND \"brand_sizes\".\"size_japan\" = 'XXS')")
+      expect.should == brand_data
     end
   end
 end
