@@ -11,22 +11,13 @@
  *= require_self
  *= require_tree .
  */
-li {
-margin-left:0px;
-list-style-type: none;
+#nav {
+  background-color: #FFF;
 }
-a {
-text-decoration: none;
-}
-
-.nav_bar {
-  margin: 0 0 20px 0;
-}
-.nav {
-  float: left;
-  margin: 0 10px 0 0;
-  font-weight:bold;
+#nav a {
+  text-decoration: none;
 }
 .footer {
   text-align:center; 
+  margin: 20px;
 }
